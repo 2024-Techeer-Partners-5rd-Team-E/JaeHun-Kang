@@ -1,5 +1,5 @@
 <h1 align="center">JaeHun-Kang</h1>
-E2E 풀스택 과정 중 Front-end를 집중적으로 공부하고 있는 강재훈입니다!
+<p align="center">E2E 풀스택 과정 중 Front-end를 집중적으로 공부하고 있는 강재훈입니다!</p>
 
 <h2>Index</h2>
 📌 <b>Youtube Clone Coding</b>
