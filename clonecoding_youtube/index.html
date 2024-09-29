@@ -10,6 +10,8 @@
 
   <title>Youtube Mobile</title>
   <script src="https://kit.fontawesome.com/266cf17347.js" crossorigin="anonymous"></script>
+
+  <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -33,7 +35,9 @@
     <video controls height="500" src="video/FunkSummer.MOV"></video>
   </section>
 
-  <!-- Video Info -->
+  <!-- Video Info And Up Next -->
+  <div class="infoAndUpNext">
+    <!-- Video Info -->
   <section class="info">
     <!-- Metadata -->
     <div class="metadata">
@@ -42,22 +46,19 @@
         <li>#Funk</li>
         <li>#Jazz</li>
       </ul>
-      <titleAndButton>
-        <span class="title">
-          히사히시조의 Summer, Funk version으로 재해석하다! | Techeer Partners와 함께하는 HTML과 CSS를 이용한 Youtube Clone Coding : 가장 열심히
-          공부하는 E팀
+      <div class="titleAndButton">
+        <span class="title clamp">
+          히사히시조의 Summer, Funk version으로 재해석하다! | Techeer Partners와 함께하는 HTML과 CSS를 이용한 Youtube Clone Coding : 가장 열심히 공부하는 E팀 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         </span>
-        <Button class="moreBtn">
+        <Button class="moreBtn clicked">
           <i class="fas fa-caret-down"></i>
         </Button>
-      </titleAndButton>
-      <div class="views">
-        <span class="views">1M views 1 month ago</span>
       </div>
+      <span class="views">1M views 1 month ago</span>
     </div>
     <!-- Actions -->
     <ul class="actions">
-      <li><button><i class="fas fa-thumbs-up"></i><span>1K</span></button></li>
+      <li><button><i class="active fas fa-thumbs-up"></i><span>1K</span></button></li>
       <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
       <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
       <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
@@ -75,11 +76,13 @@
       <button class="subscribe">subscribe</button>
     </div>
   </section>
-  <section class="UpNext">
+
+  <!-- Up Next -->
+  <section class="upNext">
     <span class="title">Up Next</span>
     <ul>
       <li class="item">
-        <img src="image/img1.jpg" alt="">
+        <div class="img"><img src="image/img1.jpg" alt=""></div>
         <div class="info">
           <span class="title">Techeer Partners Study, 테커 파트너스에서 멋쟁이가 되고 싶다면? 강재훈이 리더인 Techeer Partners Team E ⭐️ (E2E 실전
             Study)</span>
@@ -89,7 +92,7 @@
         <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
       </li>
       <li class="item">
-        <img src="image/img2.jpg" alt="">
+        <div class="img"><img src="image/img2.jpg" alt=""></div>
         <div class="info">
           <span class="title">Techeer Partners Study, 테커 파트너스에서 멋쟁이가 되고 싶다면? 강재훈이 리더인 Techeer Partners Team E ⭐️ (E2E 실전
             Study)</span>
@@ -99,7 +102,7 @@
         <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
       </li>
       <li class="item">
-        <img src="image/img3.jpg" alt="">
+        <div class="img"><img src="image/img3.jpg" alt=""></div>
         <div class="info">
           <span class="title">Techeer Partners Study, 테커 파트너스에서 멋쟁이가 되고 싶다면? 강재훈이 리더인 Techeer Partners Team E ⭐️ (E2E 실전
             Study)</span>
@@ -110,6 +113,9 @@
       </li>
     </ul>
   </section>
+  </div>
+
+  
 </body>
 
 </html>
