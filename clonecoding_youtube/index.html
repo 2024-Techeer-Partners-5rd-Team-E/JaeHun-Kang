@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initail-scale=1.0">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Youtube Mobile</title>
+  <script src="https://kit.fontawesome.com/266cf17347.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- header+section.player+section.info+section.UpNext -->
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <div class="icons">
+        <i class="fab fa-youtube"></i>
+        <span class="title">Youtube</span>
+      </div>
+    </div>
+    <div class="icons">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-ellipsis-v"></i>
+    </div>
+  </header>
+
+  <!-- Video Player -->
+  <section class="player">
+    <video controls height="500" src="video/FunkSummer.MOV"></video>
+  </section>
+
+  <!-- Video Info -->
+  <section class="info">
+    <!-- Metadata -->
+    <div class="metadata">
+      <ul class="hashtags">
+        <li>#Summer</li>
+        <li>#Funk</li>
+        <li>#Jazz</li>
+      </ul>
+      <titleAndButton>
+        <span class="title">
+          히사히시조의 Summer, Funk version으로 재해석하다! | Techeer Partners와 함께하는 HTML과 CSS를 이용한 Youtube Clone Coding : 가장 열심히
+          공부하는 E팀
+        </span>
+        <Button class="moreBtn">
+          <i class="fas fa-caret-down"></i>
+        </Button>
+      </titleAndButton>
+      <div class="views">
+        <span class="views">1M views 1 month ago</span>
+      </div>
+    </div>
+    <!-- Actions -->
+    <ul class="actions">
+      <li><button><i class="fas fa-thumbs-up"></i><span>1K</span></button></li>
+      <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+      <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+      <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+      <li><button><i class="fas fa-font-awesome-flag"></i><span>Report</span></button></li>
+    </ul>
+    <!-- Channel Description -->
+    <div class="channel">
+      <div class="metadata">
+        <img src="image/짱구코코낸내.jpg" alt="" />
+        <div class="info">
+          <span class="name">JaeJae</span>
+          <span class="subscribers">1M subscribers</span>
+        </div>
+      </div>
+      <button class="subscribe">subscribe</button>
+    </div>
+  </section>
+  <section class="UpNext">
+    <span class="title">Up Next</span>
+    <ul>
+      <li class="item">
+        <img src="image/img1.jpg" alt="">
+        <div class="info">
+          <span class="title">Techeer Partners Study, 테커 파트너스에서 멋쟁이가 되고 싶다면? 강재훈이 리더인 Techeer Partners Team E ⭐️ (E2E 실전
+            Study)</span>
+          <span class="name">JaeJae</span>
+          <span class="views">82K views</span>
+        </div>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+      </li>
+      <li class="item">
+        <img src="image/img2.jpg" alt="">
+        <div class="info">
+          <span class="title">Techeer Partners Study, 테커 파트너스에서 멋쟁이가 되고 싶다면? 강재훈이 리더인 Techeer Partners Team E ⭐️ (E2E 실전
+            Study)</span>
+          <span class="name">JaeJae</span>
+          <span class="views">82K views</span>
+        </div>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+      </li>
+      <li class="item">
+        <img src="image/img3.jpg" alt="">
+        <div class="info">
+          <span class="title">Techeer Partners Study, 테커 파트너스에서 멋쟁이가 되고 싶다면? 강재훈이 리더인 Techeer Partners Team E ⭐️ (E2E 실전
+            Study)</span>
+          <span class="name">JaeJae</span>
+          <span class="views">82K views</span>
+        </div>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+      </li>
+    </ul>
+  </section>
+</body>
+
+</html>
