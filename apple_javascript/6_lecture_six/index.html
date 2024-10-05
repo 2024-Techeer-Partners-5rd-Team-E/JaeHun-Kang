@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lecture 6</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+
+    <h4 id="test">안녕하세요</h4>
+    
+
+    <div class="alert-box" id="alert">
+      <p id="title">Alert</p>
+      <button id="close">Close</button>
+    </div>
+
+    <button onclick="Alert('block', 'Alert')">Button</button>
+
+    <button onclick="Alert('block', '아이디를 안입력하셨어요')">ID Button</button>
+    
+    <button onclick="Alert('block', '비번을 안입력하셨어요')">PW Button</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- head에 넣으면 이 파일을 가지러감, 기다려야함 -->
+     <!-- 웹 구성요소를 먼저 해석시키는 것이 좋으니 -->
+      <!-- body 태그 끝나기 전에 넣는것이 가장 이상적 -->
+
+    <script>
+      // document.querySelectorAll('#test')[0]
+      // document.getElementById('test').innerHTML = '???';
+      //jquery를 사용할 때는 jquery 파일이 먼저 로드되어있어야함
+      $('#test').html('안녕');
+      // $('#test') = id가 test인 걸 찾아주세요, class는 .test
+      // .html은 모든 html을, .text는 모든 text를
+      $('#test').css('color', 'red');
+      // 스타일 속성 변경
+      // 파라미터 두 개 사용
+      // $('#test').attr('src', 'dsddd.jpg')
+      //attribute의 약자
+
+
+      document.getElementById('close').addEventListener('click', function(){
+        // addEventListener 함수?
+        // 왼쪽에 있는 요소가 클릭이 되면 안에 있는 코드 실행해주세요~
+        // click = Event
+        document.getElementById('alert').style.display="none";
+      });
+
+
+      function Alert(display, content){
+        document.getElementById('alert').style.display= display;
+        document.getElementById('title').innerHTML= content;
+      }
+
+    </script>
+
+
+  
+  </body>
+  
+</html>
