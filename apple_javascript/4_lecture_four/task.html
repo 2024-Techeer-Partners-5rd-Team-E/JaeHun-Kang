@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <div class="alert-box" id="alert">
+      <p>Alert</p>
+      <button onclick=" Alert('alert', 'none')">Close</button>
+    </div>
+    <div class="alert-box" id="idAlert">
+      <p>Alert</p>
+      <button onclick=" Alert('idAlert', 'none')">Close</button>
+    </div>
+    <div class="alert-box" id="pwAlert">
+      <p>Alert</p>
+      <button onclick=" Alert('pwAlert', 'none')">Close</button>
+    </div>
+
+    <button onclick="Alert('alert', 'block')">Button</button>
+  <button onclick="Alert('idAlert', 'block')">ID Button</button>
+  <button onclick="Alert('pwAlert', 'block')">PW Button</button>
+
+  <script>
+
+    function Alert(alertType, display){
+      document.getElementById(alertType).style.display=display;
+    }
+
+
+
+  </script>
+
+  </body>
+
+  
+</html>

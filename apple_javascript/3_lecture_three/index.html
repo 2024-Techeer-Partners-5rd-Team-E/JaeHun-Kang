@@ -13,22 +13,24 @@
     </div>
 
     <button onclick="openAlert()">Button</button>
+
+    <script>
+
+      function openAlert() {
+        document.getElementById('alert').style.display='block';
+      }
+  
+  
+      // 숙제 끝
+      function closeAlert() {
+        document.getElementById('alert').style.display='none';
+      }
+  
+      // script는 html아래에 있어야 오류가 안생긴다
+      // HTML을 먼저 읽어야 JS로 조작이 가능
+  
+    </script>
   </body>
 
-  <script>
-
-    function openAlert() {
-      document.getElementById('alert').style.display='block';
-    }
-
-
-    // 숙제 끝
-    function closeAlert() {
-      document.getElementById('alert').style.display='none';
-    }
-
-    // script는 html아래에 있어야 오류가 안생긴다
-    // HTML을 먼저 읽어야 JS로 조작이 가능
-
-  </script>
+  
 </html>

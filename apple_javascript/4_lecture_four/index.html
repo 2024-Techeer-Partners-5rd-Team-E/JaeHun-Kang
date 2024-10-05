@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lecture 4</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <div class="alert-box" id="alert">
+      <p>Alert</p>
+      <button onclick=" Alert('none')">Close</button>
+    </div>
+
+    <button onclick="Alert('block')">Button</button>
+
+    <script>
+
+      function Alert(hole){
+        document.getElementById('alert').style.display=hole;
+      }
+  
+      function plus(hole) {
+        2 + hole
+      }
+  
+      plus(1);
+      plus(2);
+      plus(3);
+  
+    </script>
+  </body>
+
+  
+
+  
+</html>
