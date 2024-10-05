@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lecture 5</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <div class="alert-box" id="alert">
+      <p id="title">Alert</p>
+      <button id="close">Close</button>
+    </div>
+
+    <button onclick="Alert('block', 'Alert')">Button</button>
+
+    <button onclick="Alert('block', '아이디를 안입력하셨어요')">ID Button</button>
+    
+    <button onclick="Alert('block', '비번을 안입력하셨어요')">PW Button</butto>
+
+    <script>
+
+      document.getElementById('close').addEventListener('mouseover', function(){
+        // addEventListener 함수?
+        // 왼쪽에 있는 요소가 클릭이 되면 안에 있는 코드 실행해주세요~
+        // click = Event
+        document.getElementById('alert').style.display="none";
+      });
+
+
+      function Alert(display, content){
+        document.getElementById('alert').style.display= display;
+        document.getElementById('title').innerHTML= content;
+      }
+
+    </script>
+
+  </body>
+  
+</html>
