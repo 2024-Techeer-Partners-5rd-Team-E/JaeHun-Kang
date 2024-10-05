@@ -8,31 +8,24 @@
 
   <body>
     <div class="alert-box" id="alert">
-      <p>Alert</p>
-      <button onclick=" Alert('alert', 'none')">Close</button>
-    </div>
-    <div class="alert-box" id="idAlert">
-      <p>Alert</p>
-      <button onclick=" Alert('idAlert', 'none')">Close</button>
-    </div>
-    <div class="alert-box" id="pwAlert">
-      <p>Alert</p>
-      <button onclick=" Alert('pwAlert', 'none')">Close</button>
+      <p id="title">Alert</p>
+      <button onclick=" Alert('none', 'Closed')">Close</button>
     </div>
 
-    <button onclick="Alert('alert', 'block')">Button</button>
-  <button onclick="Alert('idAlert', 'block')">ID Button</button>
-  <button onclick="Alert('pwAlert', 'block')">PW Button</button>
+    <button onclick="Alert('block', 'Alert')">Button</button>
 
-  <script>
+    <button onclick="Alert('block', '아이디를 안입력하셨어요')">ID Button</button>
+    
+    <button onclick="Alert('block', '비번을 안입력하셨어요')">PW Button</butto>
 
-    function Alert(alertType, display){
-      document.getElementById(alertType).style.display=display;
-    }
+    <script>
 
+      function Alert(display, content){
+        document.getElementById('alert').style.display= display;
+        document.getElementById('title').innerHTML= content;
+      }
 
-
-  </script>
+    </script>
 
   </body>
 
