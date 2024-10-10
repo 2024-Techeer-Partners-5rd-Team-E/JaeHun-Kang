@@ -35,6 +35,7 @@
   - 14_object.js : 객체 (key:value)
   - 15_copy_by_value_and_reference : 값 그리고 참조에 의한 전달 (메모리 포인팅)
   - 16_try_catch.js : 에러 잡는 문법
+
 - 2_class_and_oop : Class 문법과 상속 개념을 공부했습니다
   - 1_class_keyword.js : 생성자와 함수
   - 2_getter_and_setter : Getter와 Setter 함수 사용
@@ -42,6 +43,7 @@
   - 4_inheritance.js : 상속
   - 5_super_and_override.js : 부모 변수 가져오기
   - 6_class_problem.js : Class 예제 문제 (Task)
+
 - 3_all_about_object : 객체의 모든 것
   - 1_introduction.js : 객체 생성 방법 3가지
   - 2_property_attribute.js : 데이터 그리고 엑세서 프로퍼티의 속성
