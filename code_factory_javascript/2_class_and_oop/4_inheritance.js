@@ -19,7 +19,7 @@ class FemaleIdolModel extends IdolModel {
 
 class MaleIdolModel extends IdolModel {
   sing() {
-    return "남자 아이돌이 노래르 부릅니다";
+    return "남자 아이돌이 노래를 부릅니다";
   }
 }
 
